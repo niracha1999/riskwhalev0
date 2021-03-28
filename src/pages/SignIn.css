@@ -1,0 +1,14 @@
+.image {
+    position: center;
+}
+
+ion-header{
+    color: "light"
+}
+
+.card {
+    background-color: "light";
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
