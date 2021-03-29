@@ -14,7 +14,6 @@ import {
   IonItem,
   IonLabel,
   IonCard,
-  IonList,
 } from "@ionic/react";
 import { lockClosed, person, personCircle } from "ionicons/icons";
 import React from "react";
@@ -80,20 +79,35 @@ const SignIn: React.FC<RouteComponentProps> = (props) => {
           </IonRow>
 
           <IonRow>
-            <IonCol></IonCol>
-            <IonCard class="card">
-              <IonItem class="item">
-                <IonIcon slot="start" color="primary" icon={person}></IonIcon>
-                <IonLabel position="stacked" color="tertiary">Username</IonLabel>
-                <IonInput required></IonInput>
-              </IonItem>
-              <IonItem class="item">
-              <IonIcon slot="start" color="primary" icon={lockClosed}></IonIcon>
-              <IonLabel position="stacked"  color="tertiary">Password</IonLabel>
-              <IonInput required type="password"></IonInput>
-              </IonItem>
-            </IonCard>
-            <IonCol></IonCol>
+            <IonCol>
+              <IonCard class="card" color="light">
+                <IonItem class="item" color="transparent">
+                  <IonIcon slot="start" color="primary" icon={person}></IonIcon>
+                  <IonLabel position="stacked" color="tertiary">
+                    Username
+                  </IonLabel>
+                  <IonInput required></IonInput>
+                </IonItem>
+                <IonItem class="item" color="transparent">
+                  <IonIcon
+                    slot="start"
+                    color="primary"
+                    icon={lockClosed}
+                  ></IonIcon>
+                  <IonLabel position="stacked" color="tertiary">
+                    Password
+                  </IonLabel>
+                  <IonInput required type="password"></IonInput>
+                </IonItem>
+              </IonCard>
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <IonButton class="signinButton" color="primary" size="large">
+                Sign In
+              </IonButton>
+            </IonCol>
           </IonRow>
         </IonGrid>
       </IonContent>
