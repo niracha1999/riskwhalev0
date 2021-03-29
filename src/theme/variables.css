@@ -23,6 +23,11 @@ http://ionicframework.com/docs/theming/ */
   ion-title {
     font-family: 'Poppins';
   }
+  ion-text {
+    font-family: 'Poppins';
+    color: #618fc1;
+    font-weight: 500;
+  }
   ion-input {
     font-family: 'Open Sans';
     font-weight: 500;
@@ -93,7 +98,7 @@ http://ionicframework.com/docs/theming/ */
 
   --ion-color-light: #FDFBF3;
   --ion-color-light-rgb: 253,251,243;
-  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast: #618fc1;
   --ion-color-light-contrast-rgb: 0,0,0;
   --ion-color-light-shade: #dfddd6;
   --ion-color-light-tint: #fdfbf4;

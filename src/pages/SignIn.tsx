@@ -14,6 +14,7 @@ import {
   IonItem,
   IonLabel,
   IonCard,
+  IonText,
 } from "@ionic/react";
 import { lockClosed, person, personCircle } from "ionicons/icons";
 import React from "react";
@@ -67,48 +68,53 @@ const SignIn: React.FC<RouteComponentProps> = (props) => {
       <IonContent color="light">
         <IonGrid>
           <IonRow>
-            <IonCol></IonCol>
-            <IonCol>
-              <IonImg
-                class="image"
-                src="./assets/main_label.png"
-                alt="logo"
-              ></IonImg>
-            </IonCol>
-            <IonCol></IonCol>
+            <IonImg
+              class="image"
+              src="./assets/main_label.png"
+              alt="logo"
+            ></IonImg>
           </IonRow>
 
           <IonRow>
-            <IonCol>
-              <IonCard class="card" color="light">
-                <IonItem class="item" color="transparent">
-                  <IonIcon slot="start" color="primary" icon={person}></IonIcon>
-                  <IonLabel position="stacked" color="tertiary">
-                    Username
-                  </IonLabel>
-                  <IonInput required></IonInput>
-                </IonItem>
-                <IonItem class="item" color="transparent">
-                  <IonIcon
-                    slot="start"
-                    color="primary"
-                    icon={lockClosed}
-                  ></IonIcon>
-                  <IonLabel position="stacked" color="tertiary">
-                    Password
-                  </IonLabel>
-                  <IonInput required type="password"></IonInput>
-                </IonItem>
-              </IonCard>
-            </IonCol>
+            <IonCard class="card" color="light">
+              <IonItem class="item" color="transparent">
+                <IonIcon slot="start" color="primary" icon={person}></IonIcon>
+                <IonLabel position="stacked" color="tertiary">
+                  Username
+                </IonLabel>
+                <IonInput required></IonInput>
+              </IonItem>
+              <IonItem class="item" color="transparent">
+                <IonIcon
+                  slot="start"
+                  color="primary"
+                  icon={lockClosed}
+                ></IonIcon>
+                <IonLabel position="stacked" color="tertiary">
+                  Password
+                </IonLabel>
+                <IonInput required type="password"></IonInput>
+              </IonItem>
+            </IonCard>
           </IonRow>
-          <IonRow>
-            <IonCol>
-              <IonButton class="signinButton" color="primary" size="large">
-                Sign In
-              </IonButton>
-            </IonCol>
-          </IonRow>
+
+          <IonButton class="signinButton" color="primary" size="large">
+            Sign In
+          </IonButton>
+
+          <IonText class="text">Don’t have account? Register for free!</IonText>
+
+          <IonButton class="companyRegisterButton" color="light" size="large">
+            Register as a company
+          </IonButton>
+
+          <IonButton
+            class="individualRegisterButton"
+            color="light"
+            size="large"
+          >
+            Register as an individual
+          </IonButton>
         </IonGrid>
       </IonContent>
     </IonPage>

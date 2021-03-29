@@ -1,25 +1,65 @@
 .image {
-    position: center;
+  position: absolute;
+  left: 34.38%;
+  right: 34.38%;
 }
 
-ion-header{
-    color: "light"
+ion-header {
+  color: "light";
 }
 
 .card {
-    background-color: "light";
-    position: absolute;
-    left: 34.38%;
-    right: 34.38%;
+  background-color: "light";
+  position: absolute;
+  left: 34.38%;
+  right: 34.38%;
+  top: 28.5%;
+  bottom: 52.04%;
 }
 
-
 .signinButton {
-    position: absolute;
-    left: 34.38%;
-    right: 34.38%;
-    top: 50.93%;
-    bottom: 42.04%;
+  position: absolute;
+  left: 34.38%;
+  right: 34.38%;
+  top: 49.93%;
+  bottom: 32.04%;
 
-    border-radius: 10px;
+  border-radius: 10px;
+}
+
+.text {
+  left: 34.38%;
+  right: 34.38%;
+  position: absolute;
+  padding: 0%;
+
+  top: 63%;
+
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #4e88be;
+}
+
+.companyRegisterButton {
+  position: absolute;
+  left: 34.38%;
+  right: 34.38%;
+  top: 68.7%;
+  bottom: 24.26%;
+
+  border: 3px solid #618fc1;
+  border-radius: 10px;
+}
+
+.individualRegisterButton {
+  position: absolute;
+  left: 34.38%;
+  right: 34.38%;
+  top: 77.76%;
+  bottom: 16.2%;
+
+  border: 3px solid #618fc1;
+  border-radius: 10px;
 }
