@@ -35,6 +35,44 @@
   color: #fdfbf3;
 }
 
+.personal-label {
+  position: absolute;
+  top: 105%;
+  left: 30%;
+  right: 30%;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+
+  line-height: 30px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #fdfbf3;
+}
+
+.namecard {
+  position: absolute;
+  top: 115%;
+  left: 30%;
+  right: 30%;
+}
+.occupationcard {
+  position: absolute;
+  top: 135%;
+  left: 30%;
+  right: 30%;
+}
+.institutecard {
+  position: absolute;
+  top: 155%;
+  left: 30%;
+  right: 30%;
+}
+
 .accountcard {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -44,7 +82,7 @@
   top: 45%;
 }
 
-.companyRegisterImg {
+.individualRegisterImg {
   position: absolute;
 
   top: 0%;
@@ -73,16 +111,7 @@
   top: 80%;
 }
 
-.scrolltobottomButton {
-  position: absolute;
-
-  top: 193%;
-  left: 45%;
-  right: 45%;
-  height: 50px;
-}
-
-.company-label {
+.name-label {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -92,75 +121,15 @@
   font-size: larger;
 }
 
-.companynamecard {
+.registerButton2 {
   position: absolute;
-  top: 101%;
-  left: 30%;
-  right: 30%;
+  top: 170%;
+  left: 45%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
-.bmccard {
+.bottom-space {
   position: absolute;
-
-  top: 119%;
-  left: 10%;
-  right: 10%;
+  top: 195%;
 }
-
-.input-text-company {
-  font-size: 18px;
-}
-
-.input-text-department {
-  font-size: 18px;
-}
-
-.department-label {
-  position: absolute;
-  top: 210%;
-  left: 30%;
-  right: 30%;
-
-  font-weight: bold;
-  font-size: 28px;
-  text-align: center;
-}
-.department-card {
-  position: absolute;
-  top: 215%;
-  width: 50%;
-  left: 25%;
-}
-
-.department-arrow {
-  position: relative;
-  left: 48%;
-}
-
-.signaturecard {
-  position: absolute;
-  margin-top: 50px;
-
-  top: 200%;
-  left: 10%;
-  right: 10%;
-}
-
-.registerButton1 {
-  position: absolute;
-  top: 300%;
-  left: 40%;
-  margin-top: 200px;
-}
-
-.addDeptButton {
-  position: absolute;
-  left: 35%;
-}
-
-.bottom-space2 {
-  position: absolute;
-  top: 302%;
-}
-
-

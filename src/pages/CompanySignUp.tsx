@@ -15,7 +15,6 @@ import {
   IonInput,
   IonCard,
   IonCardHeader,
-  IonFooter,
 } from "@ionic/react";
 import { arrowDownOutline, personCircle, trash } from "ionicons/icons";
 import React, { useState } from "react";
@@ -310,11 +309,12 @@ const CompanySignUp: React.FC<RouteComponentProps> = (props) => {
             </IonItem>
           </IonCard>
 
-          <IonButton class="registerButton" color="light" size="large">
+          <IonButton class="registerButton1" color="light" size="large">
             Register
           </IonButton>
         </IonCol>
         <IonCol></IonCol>
+        <IonItem class="bottom-space2" color="transparent"></IonItem>
         
       </IonContent>
     </IonPage>
