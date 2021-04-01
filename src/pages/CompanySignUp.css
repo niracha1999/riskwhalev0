@@ -1,0 +1,160 @@
+.label {
+  position: absolute;
+  width: 500px;
+  height: 86px;
+  left: 8%;
+  top: 10%;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+
+  color: #fdfbf3;
+}
+
+.label2 {
+  position: absolute;
+  height: 30px;
+  left: 10%;
+  right: 60%;
+  top: 37%;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+
+  line-height: 30px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #fdfbf3;
+}
+
+.accountcard {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: absolute;
+  left: 10%;
+  right: 60%;
+  top: 45%;
+}
+
+.companyRegisterImg {
+  position: absolute;
+
+  top: 0%;
+  left: 50%;
+
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+
+.input-label {
+  font-size: 20px;
+}
+
+.accountitem {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.scrolltomiddleButton {
+  position: absolute;
+  height: 50px;
+  left: 20%;
+  right: 71%;
+  top: 80%;
+}
+
+.scrolltobottomButton {
+  position: absolute;
+
+  top: 193%;
+  left: 45%;
+  right: 45%;
+  height: 50px;
+}
+
+.company-label {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.input-text {
+  font-size: larger;
+}
+
+.companynamecard {
+  position: absolute;
+  top: 101%;
+  left: 30%;
+  right: 30%;
+}
+
+.bmccard {
+  position: absolute;
+
+  top: 119%;
+  left: 10%;
+  right: 10%;
+}
+
+.input-text-company {
+  font-size: 18px;
+}
+
+.input-text-department {
+  font-size: 18px;
+}
+
+.department-label {
+  position: absolute;
+  top: 210%;
+  left: 30%;
+  right: 30%;
+
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+.department-card {
+  position: absolute;
+  top: 215%;
+  width: 50%;
+  left: 25%;
+}
+
+.department-arrow {
+  position: relative;
+  left: 48%;
+}
+
+.signaturecard {
+  position: absolute;
+  margin-top: 50px;
+
+  top: 200%;
+  left: 10%;
+  right: 10%;
+}
+
+.registerButton {
+  position: absolute;
+  top: 300%;
+  left: 40%;
+  margin-top: 200px;
+  
+}
+
+.addDeptButton {
+  position: absolute;
+  left: 35%;
+}
