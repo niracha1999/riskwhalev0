@@ -1,22 +1,91 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Home.css';
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonGrid,
+  IonRow,
+  IonCol,
+  IonButton,
+  IonImg,
+  IonIcon,
+  IonItem,
+} from "@ionic/react";
+import { chevronDown, personCircle } from "ionicons/icons";
+import React from "react";
+import "./Home.css";
 
 const Home: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+      <IonHeader className="ion-no-border">
+        <IonToolbar color="light">
+          <IonGrid>
+            <IonRow>
+              <IonCol size-xs="6" size-sm="3" size-md="4" size-lg="2">
+                <IonButton size="large" fill="clear">
+                  <IonImg
+                    src="./assets/horizontal_logo_with_text.png"
+                    alt="logo_with_text"
+                  ></IonImg>
+                </IonButton>
+              </IonCol>
+              <IonCol size="1"></IonCol>
+              <IonCol size="2">
+                <IonButton size="large" fill="clear">
+                  <IonTitle>Business Impact Analysis</IonTitle>
+                </IonButton>
+              </IonCol>
+              <IonCol size="1"></IonCol>
+              <IonCol size="2">
+                <IonButton size="large" fill="clear">
+                  <IonTitle>Risk Assessment</IonTitle>
+                </IonButton>
+              </IonCol>
+              <IonCol size="2"></IonCol>
+              <IonCol size="2">
+                <IonButton
+                  size="large"
+                  fill="clear"
+                  routerLink="/signin"
+                  routerDirection="root"
+                >
+                  <IonIcon
+                    slot="start"
+                    color="primary"
+                    icon={personCircle}
+                  ></IonIcon>
+                  <IonTitle>Account</IonTitle>
+                </IonButton>
+              </IonCol>
+            </IonRow>
+          </IonGrid>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+
+      <IonContent color="light">
+        <IonImg
+          class="hero-img"
+          src="/assets/home_hero_pic.jpg"
+          alt="home_hero_pic"
+        ></IonImg>
+        <IonButton class="startButton" color="primary" size="large">
+          Start Planning
+        </IonButton>
+
+        <IonIcon
+          class="chevron_icon"
+          color="secondary"
+          size="large"
+          icon={chevronDown}
+        ></IonIcon>
+
+        <IonImg
+          class="info-img"
+          src="/assets/home_bcm_info.jpg"
+          alt="home_bcm_info"
+        ></IonImg>
       </IonContent>
     </IonPage>
   );

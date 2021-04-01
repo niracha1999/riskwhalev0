@@ -1,0 +1,24 @@
+.hero-img {
+  height: 75%;
+}
+
+.startButton {
+  position: absolute;
+  top: 80%;
+  left: 43%;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.chevron_icon {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+}
+
+.info-img {
+    top: 200%;
+    margin-top: 18%;
+    margin-bottom: 10%;
+    height: 79%;
+}

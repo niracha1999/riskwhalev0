@@ -22,9 +22,7 @@ import { RouteComponentProps, useHistory } from "react-router-dom";
 import "./SignIn.css";
 
 const SignIn: React.FC<RouteComponentProps> = (props) => {
-  const authen = () => {
-   
-  };
+  const authen = () => {};
 
   return (
     <IonPage>
@@ -106,7 +104,13 @@ const SignIn: React.FC<RouteComponentProps> = (props) => {
 
           <IonText class="text">Don’t have account? Register for free!</IonText>
 
-          <IonButton class="companyRegisterButton" color="light" size="large">
+          <IonButton
+            class="companyRegisterButton"
+            color="light"
+            size="large"
+            routerLink="/companysignup"
+            routerDirection="root"
+          >
             Register as a company
           </IonButton>
 
@@ -114,6 +118,8 @@ const SignIn: React.FC<RouteComponentProps> = (props) => {
             class="individualRegisterButton"
             color="light"
             size="large"
+            routerLink="/individualsignup"
+            routerDirection="root"
           >
             Register as an individual
           </IonButton>
