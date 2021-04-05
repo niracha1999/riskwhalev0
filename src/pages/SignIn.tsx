@@ -77,7 +77,7 @@ const SignIn: React.FC<RouteComponentProps> = (props) => {
 
           <IonRow>
             <IonCard class="card" color="light">
-              <IonItem class="item" color="transparent">
+              <IonItem color="transparent">
                 <IonIcon slot="start" color="primary" icon={person}></IonIcon>
                 <IonLabel position="stacked" color="tertiary">
                   Username

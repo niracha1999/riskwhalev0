@@ -1,3 +1,4 @@
+import { FilesystemDirectory } from "@capacitor/core";
 import {
   IonButton,
   IonCol,
@@ -19,6 +20,7 @@ import {
 import { arrowDownOutline, personCircle, trash } from "ionicons/icons";
 import React, { useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 import "./CompanySignUp.css";
 
 const scrollToBottom = () => {
@@ -32,30 +34,32 @@ const ScrollToPoint = () => {
 };
 
 const CompanySignUp: React.FC<RouteComponentProps> = (props) => {
-  const template = { dept: " " };
-  const [fields, setFields] = useState([template]);
+  const [inputFields, setInputFields] = useState([{ id: uuidv4(), dept: "" }]);
+
   const addField = () => {
     {
-      setFields([...fields, template]);
+      setInputFields([...inputFields, { id: uuidv4(), dept: "" }]);
     }
-    console.log(fields);
   };
 
-  const onChange = (e: React.FormEvent<HTMLIonInputElement>, index: number) => {
-    const updatedFields = fields.map((field, i) =>
-      index == i
-        ? Object.assign(field, {
-            [e.currentTarget.name]: e.currentTarget.value,
-          })
-        : field
+  const onChange = (id: string,event: React.FormEvent<HTMLIonInputElement>) => {
+    const newInputFields = inputFields.map((i: any) => {
+      if (id === i.id) {
+        i[event.currentTarget.name] = event.currentTarget.value;
+      }
+      return i;
+    });
+
+    setInputFields(newInputFields);
+  };
+
+  const removeField = (id: any) => {
+    const filteredFields = [...inputFields];
+    filteredFields.splice(
+      filteredFields.findIndex((value) => value.id === id),
+      1
     );
-    setFields(updatedFields);
-  };
-
-  const removeField = (index: number) => {
-    const filteredFields = [...fields];
-    filteredFields.splice(index, 1);
-    setFields(filteredFields);
+    setInputFields(filteredFields);
   };
 
   const authen = () => {};
@@ -259,12 +263,12 @@ const CompanySignUp: React.FC<RouteComponentProps> = (props) => {
           Next
         </IonButton>
         <IonLabel class="department-label" color="light">
-          List of Functional Departments*
+          List of Functional Areas*
         </IonLabel>
         <IonCol></IonCol>
         <IonCol class="department-card">
-          {fields.map((field, index) => (
-            <IonGrid key={index}>
+          {inputFields.map((inputField) => (
+            <IonGrid key={inputField.id}>
               <IonIcon
                 color="light"
                 size="large"
@@ -276,16 +280,17 @@ const CompanySignUp: React.FC<RouteComponentProps> = (props) => {
                 <IonItem color="light">
                   <IonInput
                     required
-                    placeholder="Insert a functional department"
+                    placeholder="Insert a functional department in order according to process."
                     class="input-text-department"
-                    onChange={(e) => onChange(e, index)}
-                    value={field.dept}
+                    onChange={(event) => onChange(inputField.id, event)}
+                    value={inputField.dept}
                   ></IonInput>
 
                   <IonButton
                     color="danger"
                     size="small"
-                    onClick={() => removeField(index)}
+                    disabled={inputFields.length === 1}
+                    onClick={() => removeField(inputField.id)}
                   >
                     <IonIcon icon={trash}></IonIcon>
                   </IonButton>
@@ -294,7 +299,7 @@ const CompanySignUp: React.FC<RouteComponentProps> = (props) => {
             </IonGrid>
           ))}
           <IonButton color="secondary" class="addDeptButton" onClick={addField}>
-            Add more department
+            Add more area
           </IonButton>
           <IonCard class="signaturecard" color="light">
             <IonCardHeader class="company-label">
@@ -315,7 +320,6 @@ const CompanySignUp: React.FC<RouteComponentProps> = (props) => {
         </IonCol>
         <IonCol></IonCol>
         <IonItem class="bottom-space2" color="transparent"></IonItem>
-        
       </IonContent>
     </IonPage>
   );

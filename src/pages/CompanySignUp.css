@@ -55,7 +55,7 @@
 }
 
 .input-label {
-  font-size: 20px;
+  font-size: larger;
 }
 
 .accountitem {
@@ -76,7 +76,7 @@
 .scrolltobottomButton {
   position: absolute;
 
-  top: 193%;
+  top: 196%;
   left: 45%;
   right: 45%;
   height: 50px;
@@ -89,12 +89,12 @@
 }
 
 .input-text {
-  font-size: larger;
+  font-size: 15px;
 }
 
 .companynamecard {
   position: absolute;
-  top: 101%;
+  top: 104%;
   left: 30%;
   right: 30%;
 }
@@ -102,13 +102,13 @@
 .bmccard {
   position: absolute;
 
-  top: 119%;
+  top: 121%;
   left: 10%;
   right: 10%;
 }
 
 .input-text-company {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .input-text-department {

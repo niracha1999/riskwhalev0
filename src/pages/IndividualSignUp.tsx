@@ -167,7 +167,7 @@ const IndividualSignUp: React.FC<RouteComponentProps> = (props) => {
         </IonCard>
 
         <IonCard class="occupationcard" color="light">
-          <IonCardHeader class="name-label">Occupation *</IonCardHeader>
+          <IonCardHeader class="name-label">Role in the Organization *</IonCardHeader>
           <IonItem color="light">
             <IonInput
               required

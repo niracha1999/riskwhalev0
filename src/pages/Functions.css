@@ -1,0 +1,31 @@
+.functions-title {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.functions-item {
+  top: 20%;
+}
+
+.functions-button-1 {
+  padding-left: 20%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.functions-button-2 {
+  padding-left: 43%;
+  padding-right: 45%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.functions-card {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 50px;
+  margin-right: 40%;
+
+  align-items: center;
+}
