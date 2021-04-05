@@ -13,9 +13,9 @@ import {
 } from "@ionic/react";
 import { personCircle } from "ionicons/icons";
 import React from "react";
-import "./bcmHome.css";
+import "./raHome.css";
 
-const bcmHome: React.FC = () => {
+const raHome: React.FC = () => {
   return (
     <IonPage>
       <IonHeader className="ion-no-border">
@@ -64,11 +64,11 @@ const bcmHome: React.FC = () => {
       </IonHeader>
       <IonContent color="light">
         <IonImg
-          class="bcm-intro"
-          src="/assets/bcm-intro.jpg"
-          alt="bcm-intro"
+          class="ra-intro"
+          src="/assets/ra-intro.jpg"
+          alt="ra-intro"
         ></IonImg>
-        <IonButton class="bcmStartButton" color="primary" size="large">
+        <IonButton class="raStartButton" color="primary" size="large">
           Start
         </IonButton>
       </IonContent>
@@ -76,4 +76,4 @@ const bcmHome: React.FC = () => {
   );
 };
 
-export default bcmHome;
+export default raHome;

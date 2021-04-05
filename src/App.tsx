@@ -6,7 +6,9 @@ import CompanySignUp from "./pages/CompanySignUp";
 import IndividualSignUp from "./pages/IndividualSignUp";
 import SignIn from "./pages/SignIn";
 import Functions from "./pages/Functions";
-import bcmHome from "./pages/bcmHome";
+import biaHome from "./pages/biaHome";
+import biaMain from "./pages/biaMain";
+import raHome from "./pages/raHome";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -40,7 +42,9 @@ const App: React.FC = () => (
         <Route path="/home" component={Home} exact={true} />
         <Route path="/signin" component={SignIn} exact={true} />
         <Route path="/functions" component={Functions} exact={true} />
-        <Route path="/bcmhome" component={bcmHome} exact={true} />
+        <Route path="/biahome" component={biaHome} exact={true} />
+        <Route path="/biamain" component={biaMain} exact={true} />
+        <Route path="/rahome" component={raHome} exact={true} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
