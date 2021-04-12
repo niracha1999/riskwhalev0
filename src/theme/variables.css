@@ -39,6 +39,21 @@ ion-label {
   background-color: "light";
   color: #618fc1;
 }
+ion-tabs {
+  width: 100%;
+}
+
+ion-tab-button {
+  display: inline-table;
+  width: 100%;
+  padding-left: 0%;
+}
+ion-tab-bar {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  
+}
 
 :root {
   --ion-color-primary: #618fc1;
@@ -48,11 +63,11 @@ ion-label {
   --ion-color-primary-shade: #557eaa;
   --ion-color-primary-tint: #719ac7;
 
-  --ion-color-secondary: #83acd8;
+  --ion-color-secondary: #9bbfe5;
   --ion-color-secondary-rgb: 175, 201, 228;
-  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast: #0f5aaa;
   --ion-color-secondary-contrast-rgb: 0, 0, 0;
-  --ion-color-secondary-shade: #9ab1c9;
+  --ion-color-secondary-shade: #6794c4;
   --ion-color-secondary-tint: #b7cee7;
 
   --ion-color-tertiary: #0d529c;
