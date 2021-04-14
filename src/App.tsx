@@ -8,7 +8,9 @@ import {
   IonHeader,
   IonIcon,
   IonImg,
+  IonLabel,
   IonMenu,
+  IonNav,
   IonPage,
   IonRouterOutlet,
   IonRow,
@@ -29,7 +31,8 @@ import biaHome from "./pages/biaHome";
 import biaMain from "./pages/biaMain";
 import raHome from "./pages/raHome";
 import raMain from "./pages/raMain";
-import RAtabs from "./pages/RAtabs";
+import RAstarter from "./pages/RAstarter";
+import KeyPartners from "./pages/KeyPartners";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -50,20 +53,20 @@ import "@ionic/react/css/display.css";
 /* Theme variables */
 import "./theme/variables.css";
 import React from "react";
-import { personCircle } from "ionicons/icons";
-import KeyPartners from "./pages/KeyPartners";
+import { ellipse, personCircle, square, triangle } from "ionicons/icons";
+import RAtabs from "./pages/RAtabs";
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
+        <Route path="/home" component={Home} exact={true} />
         <Route path="/companysignup" component={CompanySignUp} exact={true} />
         <Route
           path="/individualsignup"
           component={IndividualSignUp}
           exact={true}
         />
-        <Route path="/home" component={Home} exact={true} />
         <Route path="/signin" component={SignIn} exact={true} />
         <Route path="/functions" component={Functions} exact={true} />
         <Route path="/biahome" component={biaHome} exact={true} />
@@ -115,11 +118,7 @@ const App: React.FC = () => (
           </IonGrid>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
-        <IonSplitPane contentId="RAMenu">
-          <RAtabs />
-        </IonSplitPane>
-      </IonContent>
+      <RAtabs />
     </IonReactRouter>
   </IonApp>
 );

@@ -39,20 +39,19 @@ ion-label {
   background-color: "light";
   color: #618fc1;
 }
-ion-tabs {
-  width: 100%;
-}
 
 ion-tab-button {
-  display: inline-table;
-  width: 100%;
-  padding-left: 0%;
+  flex-direction: column;
+  display: contents;
 }
 ion-tab-bar {
-  display: grid;
-  width: 100%;
+  position: absolute;
+  display: inline-flex;
+
+  width: 24%;
   height: 100%;
-  
+  flex-direction: column;
+  padding-top: 5%;
 }
 
 :root {

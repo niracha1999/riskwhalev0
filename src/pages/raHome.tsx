@@ -25,7 +25,7 @@ const raHome: React.FC = () => {
           src="/assets/ra-intro.jpg"
           alt="ra-intro"
         ></IonImg>
-        <IonButton class="raStartButton" color="primary" size="large">
+        <IonButton class="raStartButton" color="primary" size="large" routerLink="RAstarter">
           Start
         </IonButton>
       </IonContent>
