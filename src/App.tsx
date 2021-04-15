@@ -31,6 +31,7 @@ import biaHome from "./pages/biaHome";
 import biaMain from "./pages/biaMain";
 import raHome from "./pages/raHome";
 import raMain from "./pages/raMain";
+import RAResult from "./pages/RAResult";
 import RAstarter from "./pages/RAstarter";
 import KeyPartners from "./pages/KeyPartners";
 
@@ -73,6 +74,7 @@ const App: React.FC = () => (
         <Route path="/biamain" component={biaMain} exact={true} />
         <Route path="/rahome" component={raHome} exact={true} />
         <Route path="/ramain" component={raMain} exact={true} />
+        <Route path="/raresult" component={RAResult} exact={true} />
       </IonRouterOutlet>
       <IonHeader className="ion-no-border">
         <IonToolbar color="light">
@@ -118,7 +120,8 @@ const App: React.FC = () => (
           </IonGrid>
         </IonToolbar>
       </IonHeader>
-      <RAtabs />
+     
+      <RAtabs/>
     </IonReactRouter>
   </IonApp>
 );

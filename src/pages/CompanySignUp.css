@@ -126,7 +126,7 @@
   text-align: center;
 }
 .department-card {
-  position: absolute;
+ position: absolute; 
   top: 215%;
   width: 50%;
   left: 25%;
