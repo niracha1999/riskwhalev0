@@ -59,21 +59,6 @@ import RAtabs from "./pages/RAtabs";
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet>
-        <Route path="/home" component={Home} exact={true} />
-        <Route path="/companysignup" component={CompanySignUp} exact={true} />
-        <Route
-          path="/individualsignup"
-          component={IndividualSignUp}
-          exact={true}
-        />
-        <Route path="/signin" component={SignIn} exact={true} />
-        <Route path="/functions" component={Functions} exact={true} />
-        <Route path="/biahome" component={biaHome} exact={true} />
-        <Route path="/biamain" component={biaMain} exact={true} />
-        <Route path="/rahome" component={raHome} exact={true} />
-        <Route path="/ramain" component={raMain} exact={true} />
-      </IonRouterOutlet>
       <IonHeader className="ion-no-border">
         <IonToolbar color="light">
           <IonGrid>
@@ -118,7 +103,24 @@ const App: React.FC = () => (
           </IonGrid>
         </IonToolbar>
       </IonHeader>
-      <RAtabs />
+      <IonContent>
+      <IonRouterOutlet>
+        <Route path="/home" component={Home} exact={true} />
+        <Route path="/companysignup" component={CompanySignUp} exact={true} />
+        <Route
+          path="/individualsignup"
+          component={IndividualSignUp}
+          exact={true}
+        />
+        <Route path="/signin" component={SignIn} exact={true} />
+        <Route path="/functions" component={Functions} exact={true} />
+        <Route path="/biahome" component={biaHome} exact={true} />
+        <Route path="/biamain" component={biaMain} exact={true} />
+        <Route path="/rahome" component={raHome} exact={true} />
+        <Route path="/ramain" component={raMain} exact={true} />
+        <Route path="/keypartners" component={KeyPartners} exact={true} />
+      </IonRouterOutlet>
+      </IonContent>
     </IonReactRouter>
   </IonApp>
 );

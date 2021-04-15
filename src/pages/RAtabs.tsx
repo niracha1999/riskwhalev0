@@ -12,49 +12,48 @@ import {
   IonTabs,
   IonPage,
   IonSplitPane,
+  IonButton,
+  IonMenuButton,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import KeyPartners from "./KeyPartners";
 
-const RAtabs: React.FC = () => {
+const RAtabs: React.FC = ({children}) => {
   return (
-    <IonTabs>
-      <IonRouterOutlet>
-        <Route exact path="/keypartners">
-          <KeyPartners />
-        </Route>
-       
-      </IonRouterOutlet>
-      <IonTabBar slot="top" color="secondary">
-        <IonTabButton tab="keypartners" href="/keypartners">
+    <IonSplitPane contentId="ra">
+      <IonMenu contentId="ra">
+        <IonButton size="large" color="dark" fill="clear" routerLink="/keypartners">
           <IonTitle>Key Partners</IonTitle>
-        </IonTabButton>
-        <IonTabButton tab="keyactivities" href="/keyactivities">
+        </IonButton>
+        <IonButton size="large" color="dark" fill="clear" routerLink="/keyactivities">
           <IonTitle>Key Activities</IonTitle>
-        </IonTabButton>
-        <IonTabButton tab="valuepropositions" href="/valuepropositions">
+        </IonButton>
+        <IonButton size="large" color="dark" fill="clear" routerLink="/valuepropositions">
           <IonTitle>Value Propositions</IonTitle>
-        </IonTabButton>
-        <IonTabButton tab="customerrelationships" href="/customerrelationships">
+        </IonButton>
+        <IonButton size="large" color="dark" fill="clear" routerLink="/customerrelationships">
           <IonTitle>Customer Relationships</IonTitle>
-        </IonTabButton>
-        <IonTabButton tab="customersegments" href="/customersegments">
+        </IonButton>
+        <IonButton size="large" color="dark" fill="clear" routerLink="/customersegments">
           <IonTitle>Customer Segments</IonTitle>
-        </IonTabButton>
-        <IonTabButton tab="coststructure" href="/coststructure">
+        </IonButton>
+        <IonButton size="large" color="dark" fill="clear" routerLink="/coststructure">
           <IonTitle>Cost Structure</IonTitle>
-        </IonTabButton>
-        <IonTabButton tab="revenuestreams" href="/revenuestreams">
+        </IonButton>
+        <IonButton size="large" color="dark" fill="clear" routerLink="/revenuestreams">
           <IonTitle>Revenue Streams</IonTitle>
-        </IonTabButton>
-        <IonTabButton tab="keyresources" href="/keyresources">
+        </IonButton>
+        <IonButton size="large" color="dark" fill="clear" routerLink="/keyresources">
           <IonTitle>Key Resources</IonTitle>
-        </IonTabButton>
-        <IonTabButton tab="channels" href="/channels">
+        </IonButton>
+        <IonButton size="large" color="dark" fill="clear" routerLink="/channels">
           <IonTitle>Channels</IonTitle>
-        </IonTabButton>
-      </IonTabBar>
-    </IonTabs>
+        </IonButton>
+      </IonMenu>
+      <IonPage id="ra">
+        {children}
+      </IonPage>
+    </IonSplitPane>
   );
 };
 
