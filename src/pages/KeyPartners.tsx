@@ -100,7 +100,7 @@ const KeyPartners: React.FC = () => {
   };
   return (
     <IonPage>
-      
+     
       <IonContent color="light">
         <IonTitle class="kp-title" color="primary">
           Key Partners

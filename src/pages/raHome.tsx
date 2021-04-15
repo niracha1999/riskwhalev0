@@ -14,11 +14,11 @@ import {
 import { personCircle } from "ionicons/icons";
 import React from "react";
 import "./raHome.css";
+import RAtabs from "./RAtabs";
 
 const raHome: React.FC = () => {
   return (
-    <IonPage>
-      
+   
       <IonContent color="light">
         <IonImg
           class="ra-intro"
@@ -29,7 +29,7 @@ const raHome: React.FC = () => {
           Start
         </IonButton>
       </IonContent>
-    </IonPage>
+ 
   );
 };
 

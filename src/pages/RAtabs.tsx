@@ -12,11 +12,12 @@ import {
   IonTabs,
   IonPage,
   IonSplitPane,
+  IonButton,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import KeyPartners from "./KeyPartners";
 
-const RAtabs: React.FC = () => {
+const RAtabs: React.FC = ({ children }) => {
   return (
     <IonPage>
       <IonHeader class="RA-header">
